@@ -4,61 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Practice Quiz</title>
+    <title>Nintendo Quiz</title>
 </head>
 <body>
-    <div class="start-screen">
-        <h1?>Would you like to take a quiz?</h1>
-        <br>
-        <input type="submit">
+    <div class="container">
+        <div class="start-screen active">
+            <h1?>Would you like to take a quiz?</h1>
+            <br>
+            <input type="submit" class="start" value= "Start Quiz">
+        </div>
+        <div class= "question firstq">
+            <span>What is Super Mario's profession?</span>
+            <ul>  
+                <li class="correct">Plumber</li>
+                <li>Construction Worker</li>
+                <li>Doctor</li>
+                <li>Stereotype</li>
+            </ul>
+        </div>
+        <div class= "question secondq">
+            <span>Which character is <em>not</em> a Nintendo princess?</span>
+            <ul>
+                <li>Rosalina</li>
+                <li>Zelda</li>
+                <li>Peach</li>
+                <li class="correct">Isabel</li>
+            </ul>
+        </div>
+        <div class= "question thirdq">
+            <span>How many evolutions does the Pokemon Eevee have?</span>
+            <ul>
+                <li>9</li>
+                <li>3</li>
+                <li>5</li>
+                <li class="correct">7</li>
+            </ul>
+        </div>
+        <div class= "question fourthq">
+            <span>What instument did Donkey Kong play in Donkey Kong 64?</span>
+            <ul>
+                <li>Saxophone</li>
+                <li>Electric Guitar</li>
+                <li class="correct">Bongos</li>
+                <li>Keytar</li>
+            </ul>
+        </div>
+        <div class= "question fifthq">
+            <span>Who is <em>not</em> currently on team Star Fox?</span>
+            <ul>
+                <li>Peppy Hare</li>
+                <li>Slippy Toad</li>
+                <li class="correct">Pigma Dengar</li>
+                <li>Falco Lombardi</li>
+            </ul>
+        </div>
+        <div class="score-screen">
+            <ul class=high-scores></ul>
+            <label for="score-name">Enter Your Initials</label>
+            <input type="text" id="initials">
+            <input type="submit" class=enterNm value="Submit">
+        </div>
     </div>
-  <div class="container">
-      <div class= "question firstq">
-            <ul>What is Super Mario's profession?
-            <li>Plumber</li>
-            <li>Construction Worker</li>
-            <li>Doctor</li>
-            <li>Stereotype</li>
-        </u1>
-      </div>
-      <div class= "question secondq">
-        <ul>Which character is <em>not</em> a Nintendo princess?
-            <li>Rosalia</li>
-            <li>Zelda</li>
-            <li>Peach</li>
-            <li>Isabel</li>
-        </u1>
-      </div>
-      <div class= "question thirdq">
-        <ul>How many evolutions does the Pokemon Eevee have?
-            <li>9</li>
-            <li>3</li>
-            <li>5</li>
-            <li>7</li>
-        </u1>
-    </div>
-    <div class= "question fourthq">
-        <ul>What instument did Donkey Kong play in Donkey Kong 64?
-            <li>Saxophone</li>
-            <li>Electric Guitar</li>
-            <li>Bongos</li>
-            <li>Keytar</li>
-        </u1>
-    </div>
-    <div class= "question fifthq">
-        <ul>Who is <em>not</em> currently on team Star Fox?
-            <li>Peppy Hare</li>
-            <li>Slippy Toad</li>
-            <li>Pigma Dengar</li>
-            <li>Falco Lombardi</li>
-        </ul>
-    </div>
-  </div>
-  <div class="score-screen">
-      <label for="score-name">Enter Your Initials</label>
-<input type="text" id="initials">
-<input type="submit" value="Submit">
-  </div>
     <script src="script.js"></script>
 </body>
 </html>
