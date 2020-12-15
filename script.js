@@ -19,8 +19,10 @@ timerScrn.classList.add("active")
 timer=setInterval(function(){
 timerScrn.textContent=time
 time --
-    if (time===0){
+    if (time== -1){
+      console.log("end")
     endquiz()
+    
       // TODO:End quiz
     }
   },1000)
@@ -28,16 +30,16 @@ time --
 // TODO: add timer that counts down from 10 secs on click and disappears when time is up
 })
 // End game function
+
 function endquiz(){
 clearInterval(timer)
-document.querySelector(".timer-screen").classList.remove("active")
+document.querySelector("#timer-screen").classList.remove("active")
 // TODO:if the score-screen does not have the active element class, remove active tag and add it to score screen
-
-if (activeScrn!==".score-screen"){
-  
+var activeScrn = document.querySelector(".active")
+  activeScrn.classList.remove("active")
   document.querySelector(".score-screen").classList.add("active")
 }
-}
+
 
 var answerSels = document.querySelectorAll("li")
 // The answer li's become an array as answerSels. Keep running loop while the index is less than the amount in array.
