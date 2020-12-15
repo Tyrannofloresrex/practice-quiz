@@ -1,3 +1,6 @@
+body{
+    background-color: hsla(172, 49%, 52%, 0.733);
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -11,10 +14,9 @@
 .container>.active {
     display:flex;
 }
-
-ul {
-    list-style-type: lower-alpha;
-    margin: 30px auto;
+.start-screen {
+    padding: 20px 20px;
+    margin: 25px auto;
 }
 
 .question {
@@ -22,8 +24,14 @@ ul {
     justify-content: center;
     align-items: center;
     padding: 20px 20px;
-    
+    margin: 25px auto;
 }
+
+ul {
+    list-style-type: lower-alpha;
+    margin: 30px auto;
+}
+
 .question li{
     float: left;
     text-align: center;
