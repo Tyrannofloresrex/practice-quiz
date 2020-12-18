@@ -93,7 +93,7 @@ enterNm.addEventListener("click", function () {
   localStorage.setItem("scoreboard", hsArrayString);
   function clear(){
   nameInput.value = ''
-  }clear()
+  } clear()
   }
   
 });

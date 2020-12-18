@@ -19,7 +19,7 @@ body {
   padding: 20px 20px;
   margin: 25px auto;
   font-family: "Slackey", cursive;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 .start {
@@ -66,11 +66,12 @@ li {
   font-family: "Press Start 2P", cursive;
 }
 .score-screen {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px;
-    margin: 25px auto;    
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  margin: 25px auto;
+  font-size: 25px;
 }
 .reset {
   font-family: "Press Start 2P", cursive;
@@ -81,7 +82,7 @@ li {
 
 #initials {
   font-family: "Press Start 2P", cursive;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 label {
